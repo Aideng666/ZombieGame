@@ -5,11 +5,13 @@ using UnityEngine;
 public class WalkerMovement : MonoBehaviour
 {
     [SerializeField] float speed;
+    [SerializeField] float knockbackForce;
 
     Rigidbody body;
     Transform trans;
 
     GameObject player;
+
 
     // Start is called before the first frame update
     void Start()
@@ -27,5 +29,11 @@ public class WalkerMovement : MonoBehaviour
     void Update()
     {
         body.velocity = (player.transform.position - trans.position).normalized * speed;
+        trans.LookAt(player.transform.position);
+    }
+
+    public void Knockback(Vector3 direction)
+    {
+        body.AddForce(direction.normalized * knockbackForce, ForceMode.Impulse);
     }
 }

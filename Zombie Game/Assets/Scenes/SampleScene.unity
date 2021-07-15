@@ -343,7 +343,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 27, z: -0}
+  m_LocalPosition: {x: 0, y: 44.8, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -414,7 +414,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 628c5c91f359c0544ba92bfe7a48ec17, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -456,7 +456,7 @@ Transform:
   m_LocalScale: {x: 20, y: 1, z: 20}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1202851649659489616
 PrefabInstance:
@@ -475,7 +475,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1202851649456384282, guid: 509a2f1fcb8be744ab88fcfcf7173af2, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1202851649456384282, guid: 509a2f1fcb8be744ab88fcfcf7173af2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -483,7 +483,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1202851649456384282, guid: 509a2f1fcb8be744ab88fcfcf7173af2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 5.9
       objectReference: {fileID: 0}
     - target: {fileID: 1202851649456384282, guid: 509a2f1fcb8be744ab88fcfcf7173af2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -519,7 +519,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1202851649456384283, guid: 509a2f1fcb8be744ab88fcfcf7173af2, type: 3}
       propertyPath: bulletSpeed
-      value: 10
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -6049972954340971755, guid: 509a2f1fcb8be744ab88fcfcf7173af2, type: 3}

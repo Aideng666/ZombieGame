@@ -4,13 +4,7 @@ using UnityEngine;
 
 public class Walker : MonoBehaviour
 {
-    private int _health = 100;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private int _health = 20;
 
     // Update is called once per frame
     void Update()
@@ -29,5 +23,16 @@ public class Walker : MonoBehaviour
     void Die()
     {
         Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Bullet")
+        {
+            Destroy(other.gameObject);
+
+            TakeDamage(other.gameObject.GetComponent<Bullet>().GetDamage());
+            Debug.Log("Damaged");
+        }
     }
 }

@@ -585,9 +585,10 @@ GameObject:
   - component: {fileID: 4484707975834687716}
   - component: {fileID: -2385441747121021901}
   - component: {fileID: -7987429859947831304}
+  - component: {fileID: 78323820}
   m_Layer: 0
   m_Name: Walker
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -641,6 +642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  knockbackForce: 5
 --- !u!114 &-7987429859947831304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -653,3 +655,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93e1bb7704f38cd45830efc12895350d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!136 &78323820
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8965561959615074248}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2.6756139
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.3084379, z: 0}
